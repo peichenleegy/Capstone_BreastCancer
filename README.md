@@ -29,6 +29,9 @@ Based on analysis results of the classification systems and evaluated metrics, w
 
 Schlachter SC, K.D., Gora MJ, et al, Spectrally encoded confocal microscopy of esophageal tissues at 100 kHz line rate. Biomedical optics express, 2013. 4,9: p. 1636-1645.
 
+<center><img src="images/Benign.png"/></center>
+<center><img src="images/Malignant.png"/></center>
+<center><img src="images/DataCategories.png"/></center>
 
 
 ### Research Procedures
@@ -38,10 +41,16 @@ Next, I select images of certain patients having adipose, fibrous, and malignant
 After that, the models will be test to differciate images from benign/malignant or reviewed by human/not reviewed needs. 
 Considering the data size and previous findings, I modified the workflow and tried to apply leave-one-out cross validation to figure out the best performance of the model that we could provide
 
+<center><img src="images/Workflow.png"/></center>
+<center><img src="images/GaussianBlur.png"/></center>
+<center><img src="images/CrossVal.png"/></center>
+
 ### Results
 
 For each iteration I got a metrix like this, and then I did calculations to get average prediction and average recall based on the sum of references, predictions and correct labels. 
 Finally, I have got the best performance at the fifth epochs are the average precision is 0.85, the average recall is 0.998. Specifically, the model showed the 85 corrected predictions on 100 predictions, and there are 85 other tissues selected from overall 86 images of the other tissue type. 
+
+<center><img src="images/Results.png"/></center>
 
 ### Findings
 
