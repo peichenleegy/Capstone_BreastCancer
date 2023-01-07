@@ -41,8 +41,8 @@ Next, I select images of certain patients having adipose, fibrous, and malignant
 After that, the models will be test to differciate images from benign/malignant or reviewed by human/not reviewed needs. 
 Considering the data size and previous findings, I modified the workflow and tried to apply leave-one-out cross validation to figure out the best performance of the model that we could provide
 
-<center><img src="images/Workflow.png"/></center>
 <center><img src="images/GaussianBlur.png"/></center>
+<center><img src="images/Workflow.png"/></center>
 <center><img src="images/CrossVal.png"/></center>
 
 ### Results
